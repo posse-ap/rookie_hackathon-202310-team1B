@@ -57,7 +57,7 @@
     font-family: "Noto Sans JP", sans-serif;
   }
   
-  .wrapper {
+  .wrapper1 {
     padding: 80px 0 160px;
     /* sectionを子に持つ */
     display: flex;
