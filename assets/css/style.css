@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 /*==================================================
@@ -63,7 +62,16 @@
     flex-direction: column;
     gap: 120px;
     overflow: hidden;
+    z-index: 1;
+}
 
+.section {
+    padding-top: 80px;
+    margin-top: 0; /* This negative margin might be causing the overlap */
+    margin: 0 240px; 
+}
+
+  
   /**
    * 1.3 - 汎用スタイル
    */
@@ -74,8 +82,14 @@
     box-sizing: content-box;
   }
   
-
   
+  .section-title{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
   .section-lead {
     margin-top: 40px;
     font-size: 14px;
@@ -118,6 +132,7 @@
     display: flex; 
     align-items: center; 
     height: 80px;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -220,8 +235,6 @@
   .header.is-transparent:not(.is-open) .header-snsLink {
     filter: brightness(10);
   }
-
-
 
 /* style.css */
 
@@ -329,68 +342,6 @@ h1{
 }
 
 
- /* プラン */
-#plan{
-    display: flex;
-    flex-direction: column;
-}
-.plan-day{
-    width: 100%; 
-    /* 注意 */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 90px;
-}
-.plan-title{
-  font-size: 60px;
-  font-weight: bolder;
-  line-height: 1.8;
-}
-.plan-inner{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.plan-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.plan-date{
-  margin-right: auto;
-  margin-bottom: 25px;
-  font-size: 30px;
-}
-.plan-package{
-  display: flex;
-  gap: 200px;
-}
-.plan-image{
-  border: solid 1px #333333;
-  width: 400px;
-}
-.plan-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.plan-do {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-
-.plan-place {
-  font-size: 25px;
-  margin-bottom: 15px;
-}
-.plan-sentence{
-  font-size: 1px;
-}
-
 .situation {
   margin-top: 30px;
   font-size: 20px;
@@ -398,13 +349,11 @@ h1{
 }
 
 .situation h2 {
-  margin-bottom: 50px;
-  font-size: 35px;
+  margin-bottom: 20px;
 }
 
 .situation-content {
   display: flex;
-  margin-bottom: 50px;
 }
 
 .first-img {
@@ -449,14 +398,14 @@ z-index: 1;
 }
 
 .point h2 {
-margin-top: 150px;
-font-size: 35px;
+margin-top: 70px;
+margin-bottom: 10px;
+font-size: 20px;
 font-weight: bold;
 }
 
 .point-listItem {
-margin-top: 70px;
-font-size: 20px;
+margin-top: 30px;
 }
 .point-textLeft p {
 margin: 0;
@@ -561,14 +510,95 @@ padding: 0;
 display: flex;
 }
 
-
-.first-section {
-  display: grid;
-  justify-content: center;
+/* plan */
+ /* プラン */
+ #plan{
+  display: flex;
+  flex-direction: column;
+}
+.plan-day{
+  width: 100%; 
+  /* 注意 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.plan-title{
+font-size: 120px;
+font-weight: bolder;
+line-height: 1.8;
+}
+.plan-inner{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.plan-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; /* 追加 */
+margin-bottom: 30px;
+width: 800px;
+height: 400px;
+border: solid 1px #333333;
+}
+.plan-date{
+margin-right: auto;
+margin-bottom: 25px;
+font-size: 30px;
+}
+.plan-package{
+display: flex;
+width: 800px;
+height: 400px;
+border: solid 1px #333333;
+}
+.plan-image{
+border: solid 1px #333333;
+width: 500px;
+}
+.plan-content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 300px;
 }
 
-.section-title {
-  margin: auto;
-  font-weight: bold;
-  font-size: 60px;
+.plan-do {
+font-size: 50px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.plan-place {
+font-size: 25px;
+margin-bottom: 15px;
+}
+.plan-sentence{
+font-size: 1px;
+}
+
+.plan-image1{
+  background: url(../img/fukuoka1.jpg)  center center / cover no-repeat;
+}
+.plan-image2{
+  background: url(../img/fukuoka2.jpg)  center center / cover no-repeat;
+}
+.plan-image3{
+  background: url(../img/fukuoka3.jpg)  center center / cover no-repeat;
+}
+.plan-image4{
+  background: url(../img/fukuoka4.jpg)  center center / cover no-repeat;
+}
+.plan-image5{
+  background: url(../img/fukuoka5.jpg)  center center / cover no-repeat;
+}
+.plan-image6{
+  background: url(../img/fukuoka6.jpg)  center center / cover no-repeat;
+}
+.plan-image7{
+  background: url(../img/fukuoka7.jpg)  center center / cover no-repeat;
 }
