@@ -18,3 +18,10 @@ navLinks.forEach(link => {
 
 /* ヘッダーの透過 */
 const mainVisual = document.getElementById("js-mainVisual");
+window.addEventListener("scroll", function(){
+    if(window.scrollY > mainVisual.clientHeight - header.clientHeight){
+      header.classList.remove("is-transparent");
+    }else{
+      header.classList.add("is-transparent");}
+    }
+  );
