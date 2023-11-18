@@ -207,3 +207,18 @@
 }
 .plan-title
 
+/* style.css */
+
+.slider-item {
+  width: 100%;
+  height: 100vh; /* 画面の高さいっぱいに表示するための設定 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
