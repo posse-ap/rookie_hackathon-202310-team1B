@@ -81,3 +81,139 @@
     color: #0071BC;
     font-family: 'Plus Jakarta Sans', sans-serif
   }
+
+
+/* header */
+
+.header {
+    display: flex; 
+    align-items: center; 
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    border-bottom: solid 1px var(--gray-light-color);
+    padding: 0 24px;
+    z-index: 10000;
+    transition: background-color .3s linear;
+}
+  .header-logo {
+    width: 240px;
+    padding-left: 50px;
+  }
+  
+/* ハンバーガーメニューのボタン */
+  .header-button {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    margin-left: auto;
+    z-index: 1;
+  }
+
+  .header-buttonLine {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header-buttonLine:nth-of-type(1) {
+    top: 13px;
+  }
+
+  .header-buttonLine:nth-of-type(2) {
+    top: 20px;
+  }
+
+  .header-buttonLine:nth-of-type(3) {
+    top: 27px;
+  }
+
+  .header.is-open .header-buttonLine:nth-of-type(1) {
+    transform: translateX(-50%) rotate(45deg);
+    top: 20px;
+  }
+
+  .header.is-open .header-buttonLine:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .header.is-open .header-buttonLine:nth-of-type(3) {
+    transform: translateX(-50%) rotate(-45deg);
+    top: 20px;
+  }
+  /* ハンバーガーメニューの中身 */
+  .header-nav {
+    height: 60px;
+    visibility: hidden;
+    position: fixed;
+    inset:0;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    opacity:1;
+    margin-left: auto;
+    gap: 0;
+    padding: 120px 24px 40px;
+    transition: visibility .3s linear, opacity .3s linear;
+  }
+  .header.is-open .header-nav {
+    visibility: visible;
+    opacity: 1;
+  }
+  .header-navList {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    align-items: center;
+    gap: 30px;
+  }
+  .header-navItem{
+    font-size: 24px;
+  }
+  /* .header-nav {
+    visibility: hidden;
+    position: fixed;
+    inset:0;
+    display: flex;
+    align-items: center;
+    background: #F7F9FB;
+    opacity:1;
+    margin-left: auto;
+    gap: 0;
+    padding: 120px 24px 40px;
+    transition: visibility .3s linear, opacity .3s linear;
+  }
+  .header.is-open .header-nav {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header-navList {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  } */
+
+
+
+  /* 透明化 */
+  .header.is-transparent{
+    background-color: transparent;
+    border:none;
+  }
+  .header.is-transparent:not(.is-open).header-logo {
+    filter:brightness(10);
+  }
+  .header.is-transparent:not(.is-open).header-navLink{
+    color: #ffffff;
+  }
+  .header.is-transparent:not(.is-open) .header-snsLink {
+    filter: brightness(10);
+  }
