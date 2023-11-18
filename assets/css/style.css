@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 
 /*==================================================
@@ -31,6 +32,216 @@
     background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
 }
 
+:root {
+    --dark-color: #333333;
+    --white-color: #FFFFFF;
+    --primary-color: #0071BC;
+    --primary-light-color: #F7F9FB;
+    --gray-color: #ADADAD;
+    --gray-light-color: #EEEEEE;
+    --gray-dark-color: #666666;
+    --twitter-color: #1D9BF0;
+  }
+  
+  /**
+   * 1.2 - ベーススタイル
+   */
+  html {
+    /* 滑りをよくする */
+    scroll-behavior: smooth;                    
+  }
+  
+  body {
+    /* bodyの文字の基本を決める */
+    color: #333333;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  
+  .wrapper {
+    padding: 80px 0 160px;
+    /* sectionを子に持つ */
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    overflow: hidden;
+  }
+  
+  /**
+   * 1.3 - 汎用スタイル
+   */
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: content-box;
+  }
+  
+  .section {
+    padding-top: 80px;
+    margin-top: -80px;
+  }
+  
+  .section-lead {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: .05em;
+  }
+  
+  .section-body {
+    margin-top: 40px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .title-ja {
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .title-en {
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: .1em;
+    margin-top: 8px;
+    color: #0071BC;
+    font-family: 'Plus Jakarta Sans', sans-serif
+  }
+
+
+/* header */
+
+.header {
+    display: flex; 
+    align-items: center; 
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    border-bottom: solid 1px var(--gray-light-color);
+    padding: 0 24px;
+    z-index: 10000;
+    transition: background-color .3s linear;
+}
+  .header-logo {
+    width: 240px;
+    padding-left: 50px;
+  }
+  
+/* ハンバーガーメニューのボタン */
+  .header-button {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    margin-left: auto;
+    z-index: 1;
+  }
+
+  .header-buttonLine {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header-buttonLine:nth-of-type(1) {
+    top: 13px;
+  }
+
+  .header-buttonLine:nth-of-type(2) {
+    top: 20px;
+  }
+
+  .header-buttonLine:nth-of-type(3) {
+    top: 27px;
+  }
+
+  .header.is-open .header-buttonLine:nth-of-type(1) {
+    transform: translateX(-50%) rotate(45deg);
+    top: 20px;
+  }
+
+  .header.is-open .header-buttonLine:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .header.is-open .header-buttonLine:nth-of-type(3) {
+    transform: translateX(-50%) rotate(-45deg);
+    top: 20px;
+  }
+  /* ハンバーガーメニューの中身 */
+  .header-nav {
+    height: 60px;
+    visibility: hidden;
+    position: fixed;
+    inset:0;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    opacity:1;
+    margin-left: auto;
+    gap: 0;
+    padding: 120px 24px 40px;
+    transition: visibility .3s linear, opacity .3s linear;
+  }
+  .header.is-open .header-nav {
+    visibility: visible;
+    opacity: 1;
+  }
+  .header-navList {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    align-items: center;
+    gap: 30px;
+  }
+  .header-navItem{
+    font-size: 24px;
+  }
+
+  /* 透明化 */
+  .header.is-transparent{
+    background-color: transparent;
+    border:none;
+  }
+  .header.is-transparent:not(.is-open).header-logo {
+    filter:brightness(10);
+  }
+  .header.is-transparent:not(.is-open).header-navLink{
+    color: #ffffff;
+  }
+  .header.is-transparent:not(.is-open) .header-snsLink {
+    filter: brightness(10);
+  }
+
+
+
+
+
+  /* プラン */
+.plan-day{
+    width: 100%; 
+    /* 注意 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan-title
+
+
 /* style.css */
 
 .slider-item {
@@ -46,6 +257,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 
 /*矢印の設定*/
 
