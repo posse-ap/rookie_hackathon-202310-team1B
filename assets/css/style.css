@@ -80,6 +80,7 @@
   .section {
     padding-top: 80px;
     margin-top: -80px;
+    margin-left: 350px;
   }
   
   .section-lead {
@@ -334,6 +335,7 @@ h1{
   position: relative;
 }
 
+
  /* プラン */
 #plan{
     display: flex;
@@ -372,3 +374,172 @@ h1{
   display: flex;
   flex-direction: column;
 }
+
+.situation {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.situation h2 {
+  margin-bottom: 20px;
+}
+
+.situation-content {
+  display: flex;
+}
+
+.first-img {
+  width: 150px;
+}
+
+.first-text {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 550px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #FFF;
+  border: solid 3px #555;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.first-text:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  margin-top: -12px;
+  border: 12px solid transparent;
+  border-right: 12px solid #FFF;
+  z-index: 2;
+}
+
+.first-text:after {
+content: "";
+position: absolute;
+top: 50%;
+left: -30px;
+margin-top: -14px;
+border: 14px solid transparent;
+border-right: 14px solid #555;
+z-index: 1;
+}
+
+.point h2 {
+margin-top: 70px;
+margin-bottom: 10px;
+font-size: 20px;
+font-weight: bold;
+}
+
+.point-listItem {
+margin-top: 30px;
+}
+.point-textLeft p {
+margin: 0;
+padding: 0;
+}
+
+.point-textLeft {
+position: relative;
+display: inline-block;
+margin: 1.5em 0 1.5em 15px;
+padding: 7px 10px;
+min-width: 550px;
+max-width: 100%;
+color: #555;
+font-size: 16px;
+background: #FFF;
+border: solid 3px #555;
+box-sizing: border-box;
+border-radius: 15px;
+text-align: center;
+line-height: 30px;
+padding-top: 30px;
+}
+
+.point-textLeft:before {
+content: "";
+position: absolute;
+top: 50%;
+left: -24px;
+margin-top: -12px;
+border: 12px solid transparent;
+border-right: 12px solid #FFF;
+z-index: 2;
+}
+
+.point-textLeft:after {
+content: "";
+position: absolute;
+top: 50%;
+left: -30px;
+margin-top: -14px;
+border: 14px solid transparent;
+border-right: 14px solid #555;
+z-index: 1;
+}
+
+.point-textLeft p {
+margin: 0;
+padding: 0;
+}
+
+.point-listImg {
+width: 150px;
+}
+
+.point-textRight {
+position: relative;
+display: inline-block;
+margin: 1.5em 15px 1.5em 0;
+padding: 7px 10px;
+min-width: 550px;
+max-width: 100%;
+color: #555;
+font-size: 16px;
+background: #FFF;
+border: solid 3px #555;
+box-sizing: border-box;
+border-radius: 15px;
+text-align: center;
+padding-top: 22px;
+line-height: 30px;
+}
+
+.point-textRight:before {
+content: "";
+position: absolute;
+top: 50%;
+right: -24px;
+margin-top: -12px;
+border: 12px solid transparent;
+border-left: 12px solid #FFF;
+z-index: 2;
+}
+
+.point-textRight:after {
+content: "";
+position: absolute;
+top: 50%;
+right: -30px;
+margin-top: -14px;
+border: 14px solid transparent;
+border-left: 14px solid #555;
+z-index: 1;
+}
+
+.point-textRight p {
+margin: 0;
+padding: 0;
+}
+
+.point-list {
+display: flex;
+}
+
