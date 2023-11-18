@@ -79,7 +79,6 @@
   .section {
     padding-top: 80px;
     margin-top: -80px;
-    margin-left: 350px;
   }
   
   .section-lead {
@@ -514,4 +513,15 @@ padding: 0;
 
 .point-list {
 display: flex;
+}
+
+.first-section {
+  display: grid;
+  justify-content: center;
+}
+
+.section-title {
+  margin: auto;
+  font-weight: bold;
+  font-size: 40px;
 }
