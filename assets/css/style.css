@@ -346,6 +346,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 90px;
 }
 .plan-title{
   font-size: 60px;
@@ -358,24 +359,39 @@ h1{
   align-items: center;
 }
 .plan-container{
-  width: 300px;
-  height: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
 }
 .plan-date{
-
+  margin-right: auto;
+  margin-bottom: 25px;
+  font-size: 30px;
 }
 .plan-package{
   display: flex;
+  gap: 200px;
 }
 .plan-image{
   border: solid 1px #333333;
+  width: 400px;
 }
 .plan-content{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-do {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.plan-place {
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 
 .situation {
@@ -385,11 +401,13 @@ h1{
 }
 
 .situation h2 {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  font-size: 35px;
 }
 
 .situation-content {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .first-img {
@@ -434,14 +452,14 @@ z-index: 1;
 }
 
 .point h2 {
-margin-top: 70px;
-margin-bottom: 10px;
-font-size: 20px;
+margin-top: 150px;
+font-size: 35px;
 font-weight: bold;
 }
 
 .point-listItem {
-margin-top: 30px;
+margin-top: 70px;
+font-size: 20px;
 }
 .point-textLeft p {
 margin: 0;
@@ -555,7 +573,5 @@ display: flex;
 .section-title {
   margin: auto;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 60px;
 }
-
-.
