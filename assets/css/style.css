@@ -203,7 +203,6 @@
     align-items: center;
     background-color: transparent;
     opacity:1;
-    margin-left: auto;
     gap: 0;
     padding: 120px 24px 40px;
     transition: visibility .3s linear, opacity .3s linear;
@@ -214,13 +213,13 @@
   }
   .header-navList {
     display: flex;
-    width: 50%;
-    margin-left: auto;
+    width: 100%;
     align-items: center;
     gap: 30px;
   }
   .header-navItem{
     font-size: 24px;
+    font-weight: bolder;
   }
 
   /* 透明化 */
@@ -375,6 +374,8 @@ h1{
   border: solid 3px #555;
   box-sizing: border-box;
   border-radius: 15px;
+  text-align: center;
+  padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -571,7 +572,7 @@ justify-content: center; /* 追加 */
 margin-bottom: 30px;
 width: 1200px;
 height: 400px;
-border: solid 1px #333333;
+
 }
 .plan-date{
 margin-right: auto;
@@ -582,10 +583,9 @@ font-size: 30px;
 display: flex;
 width: 1200px;
 height: 600px;
-border: solid 1px #333333;
+
 }
 .plan-image{
-border: solid 1px #333333;
 width: 800px;
 }
 .plan-content{
@@ -632,4 +632,31 @@ padding: 0 10px;
 }
 .plan-image7{
   background: url(../img/fukuoka7.jpg)  center center / cover no-repeat;
+}
+
+.why-section {
+  display: grid;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.why-title {
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.why-reason {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-left: -40px;
+  text-decoration: underline dotted;
+  text-underline-offset: 5px;
+}
+
+.why-content p {
+  margin-bottom: 40px;
+  font-size: 25px;
+  line-height: 1.8;
 }
