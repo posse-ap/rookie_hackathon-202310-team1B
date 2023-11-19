@@ -201,7 +201,6 @@
     align-items: center;
     background-color: transparent;
     opacity:1;
-    margin-left: auto;
     gap: 0;
     padding: 120px 24px 40px;
     transition: visibility .3s linear, opacity .3s linear;
@@ -212,13 +211,13 @@
   }
   .header-navList {
     display: flex;
-    width: 50%;
-    margin-left: auto;
+    width: 100%;
     align-items: center;
     gap: 30px;
   }
   .header-navItem{
     font-size: 24px;
+    font-weight: bolder;
   }
 
   /* 透明化 */
@@ -373,6 +372,8 @@ h1{
   border: solid 3px #555;
   box-sizing: border-box;
   border-radius: 15px;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .first-text:before {
@@ -542,7 +543,7 @@ justify-content: center; /* 追加 */
 margin-bottom: 30px;
 width: 1200px;
 height: 400px;
-border: solid 1px #333333;
+
 }
 .plan-date{
 margin-right: auto;
@@ -553,10 +554,9 @@ font-size: 30px;
 display: flex;
 width: 1200px;
 height: 600px;
-border: solid 1px #333333;
+
 }
 .plan-image{
-border: solid 1px #333333;
 width: 800px;
 }
 .plan-content{
